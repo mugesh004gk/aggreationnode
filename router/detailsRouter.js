@@ -16,6 +16,7 @@ detailsRouter.post("/dlscreate",async(req,res)=>{
 detailsRouter.get("/dlsfind",async(req,res)=>{
     try {
         let result=await detailsController.detailsfind(req)
+        console.log(result,"dfghj")
         if(result){
             return res.send(result)
         }

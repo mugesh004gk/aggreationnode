@@ -3,7 +3,7 @@ const app= express()
 app.use(express.json())
 const port = 4000
 const mongoose=require("mongoose")
-const URL = "mongodb://localhost:27017/"
+const URL = "mongodb+srv://gkmugesh2004_db_user:qW88MXliYhfm5qv4@cluster0.evjdyui.mongodb.net/?appName=Cluster0"
 const userRouter=require("./router/userRouter")
 const detailsRouter=require("./router/detailsRouter")
 
@@ -13,7 +13,7 @@ mongoose.connect(URL).then(()=>{
 .catch((err)=>{
     console.log(err)
 })
-
+//qW88MXliYhfm5qv4
 
 app.use("/user",userRouter)
 app.use("/dls",detailsRouter)

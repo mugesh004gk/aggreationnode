@@ -21,6 +21,7 @@ detailsDal.getdetails=async(req,res)=>{
         .skip(parseInt(skip))
         .limit(parseInt(limit))
         .exec()
+        console.log("result",result)
          if(result){
             return {status:true ,data:result}
          }
